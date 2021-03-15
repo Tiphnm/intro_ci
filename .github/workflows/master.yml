@@ -3,7 +3,9 @@ on:
   - push 
 jobs : 
   FirstJob: 
-  runs: macos-latest
+  matrix:
+        os: [macos-latest]
+  runs-on: ${{ matrix.os }}
   steps: 
     - name: first step 
       run: echo "Hello world"
