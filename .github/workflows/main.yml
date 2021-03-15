@@ -1,0 +1,9 @@
+name: Test Hello World 
+on:
+  - push 
+jobs : 
+  FirstJob: 
+  runs-out: ubuntu-latest
+  steps: 
+    - name: first step 
+      run: echo "Hello world"
