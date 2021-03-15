@@ -3,7 +3,7 @@ on:
   - push 
 jobs : 
   FirstJob: 
-  runs-out: macOs-latest
-  steps: 
-    - name: first step 
-      run: echo "Hello world"
+    runs-out: ubuntu-latest
+    steps: 
+      - name: first step 
+        run: echo "Hello world"
