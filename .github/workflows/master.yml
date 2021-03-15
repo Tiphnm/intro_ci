@@ -3,7 +3,7 @@ on:
   - push 
 jobs : 
   FirstJob: 
-  runs-out: macos-latest
+  runs: macos-latest
   steps: 
     - name: first step 
       run: echo "Hello world"
